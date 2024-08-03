@@ -7,7 +7,7 @@ import { IoIosSearch } from "react-icons/io";
 
 export default function Header() {
   return (
-    <div className=" dark:bg-neutral-800 flex flex-col gap-5 md:gap-0 md:flex-row min-h-[100px] w-full items-center justify-between p-5 border-b dark:border-neutral-800 border-gray-200">
+    <div className=" dark:bg-neutral-800 flex flex-col flex-col-reverse gap-5 md:gap-0 md:flex-row min-h-[100px] w-full items-center justify-between p-5 border-b dark:border-neutral-800 border-gray-200">
       <div className="search">
 
         <div className=" flex relative items-center">
