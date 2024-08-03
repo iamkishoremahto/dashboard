@@ -13,16 +13,16 @@ function Button1({ icon , onClick}) {
 
 function LogoutBtn(){
   return <>
-  <button className=" text-gray-500 dark:text-indigo-100  transition-all hover:text-indigo-500 py-3 text-[35px] flex flex-items justify-center w-full">
+  <button className=" text-gray-500 dark:text-indigo-100  transition-all dark:hover:text-indigo-500 hover:text-indigo-500 py-3 text-[35px] flex flex-items justify-center w-full">
   <IoMdLogOut />
   </button>
   </>
 }
 
-function MenuButton({ href, hrefText }){
+function MenuButton({ href, hrefText , onClick}){
   return (
     <>
-      <NavLink to={ href } className={({ isActive }) =>(
+      <NavLink to={ href } onClick={ onClick } className={({ isActive }) =>(
       ` transition-all text-[35px] relative py-2 ${isActive ? 'text-indigo-500': ' dark:text-indigo-100 text-gray-500'} hover:text-indigo-500 w-full flex items-center justify-center 
       
       

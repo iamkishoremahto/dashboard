@@ -18,7 +18,7 @@ export default function Layout() {
     >
 
 <Navbar />
-    <div className=" text-white  border w-full ">
+    <div className=" text-white dark:border-none border w-full ">
       <Header />
       <div>
       {<Outlet />}
