@@ -1,5 +1,7 @@
 
 import { Outlet } from 'react-router'
+import Navbar from '../Components/Navbar'
+import Header from '../Components/Header'
 
 export default function Layout() {
   return (
@@ -14,8 +16,16 @@ export default function Layout() {
     relative'
     
     >
-      
+
+<Navbar />
+    <div className=" text-white  border w-full ">
+      <Header />
+      <div>
       {<Outlet />}
+      </div>
+    </div>
+      
+     
     </div>
   )
 }

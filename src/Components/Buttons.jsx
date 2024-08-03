@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 
 import { useRef, useState, useEffect } from "react"
 
+// eslint-disable-next-line react/prop-types
 function Button1({ icon , onClick}) {
   return (
     <button className="  text-[25px] p-3 rounded-full bg-neutral-100 text-neutral-500 dark:text-white dark:bg-neutral-700 hover:bg-neutral-200 dark:hover:bg-neutral-600 transition-all" onClick={onClick && ''}>{ icon }</button>
