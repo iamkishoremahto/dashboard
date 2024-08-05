@@ -12,7 +12,7 @@ export default function Header() {
   
   return (
     <div className=" dark:bg-neutral-800 flex relative flex-col-reverse gap-5 md:gap-0 md:flex-row min-h-[100px] w-full items-center justify-between p-5 border-b dark:border-neutral-800 border-gray-200">
-      <div className="search flex flex-row items-center justify-evenly gap-2 w-full">
+      <div className="search flex flex-row items-center lg:justify-between justify-evenly gap-2 w-full">
           <div  className="lg:hidden flex items-center justify-center">
           <img onClick = { () =>{setToggleMenu((state) => !state)} } className="max-h-[40px] lg:max-h-[60px]" src="\images\logo.png" alt="" />
           </div>
