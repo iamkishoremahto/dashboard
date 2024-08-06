@@ -4,11 +4,12 @@ import { MdOutlineEmail, MdNotificationsNone } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 import NavbarMob from "./NavbarMob";
-import { useState } from 'react'
+import { useThemeStore } from  '../Store/useStore'
 
 export default function Header() {
 
-  const [toggleMenu , setToggleMenu]= useState(false);
+  // const [toggleMenu , setToggleMenu]= useState(false);
+  const {toggleMenu, setToggleMenu} = useThemeStore()
   
   return (
     <div className=" dark:bg-neutral-800 flex relative flex-col-reverse gap-5 md:gap-0 md:flex-row min-h-[100px] w-full items-center justify-between p-5 border-b dark:border-neutral-800 border-gray-200">

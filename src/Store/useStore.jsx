@@ -9,5 +9,9 @@ const useOrderStatusStore = create((set) => ({
     updateOrderStatus: (params) =>{ set(params)}
 }))
 
+const useThemeStore = create((set) => ({
+    toggleMenu:false,
+    setToggleMenu: () => set((state) => ({toggleMenu : !state.toggleMenu}))
+}))
 
-export {  useOrderStatusStore }
+export {  useOrderStatusStore, useThemeStore }

@@ -4,7 +4,7 @@ import { FaCaretDown } from "react-icons/fa";
 export default function OrderStatus({ status, title, count, percentage, icon, bg_icon_color, icon_color }){
     
     return <>
-    <div className=" rounded-lg h-[208px] w-[208px] flex flex-col justify-between dark:bg-neutral-800 bg-indigo-50 ">
+    <div className=" shadow-md rounded-lg md:h-[200px] md:w-[300px] lg:h-[200px] lg:w-[200px] xl:h-[250px] xl:w-[250px]  h-[200px] w-full flex flex-col justify-between dark:bg-neutral-800 bg-indigo-50 ">
         <div className="p-3 flex flex-col gap-2 ">
             <div className={` ${icon_color} ${bg_icon_color} text-[35px] rounded-lg bg-opacity-15 h-[60px] w-[60px]  flex items-center justify-center`}>
                 {icon}

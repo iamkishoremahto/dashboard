@@ -5,7 +5,7 @@ export default function HeroLayout({ children, heading }){
             <div className="py-5">
                 <h1 className=" uppercase text-[35px] font-bold dark:text-white text-black">{ heading }</h1>
             </div>
-            <div>
+            <div className=" scrollbar-y-invisible-scroll border calc-h">
                 { children }
             </div>
         </div>
