@@ -26,7 +26,9 @@ export default function Section1() {
     <>
 
       <SectionLayout>
-        <div className="status flex items-center md:justify-evenly lg:justify-between justify-center gap-3 flex-wrap p-3">
+        
+        <div className="status flex items-center md:justify-evenly lg:justify-evenly xl:justify-between justify-center gap-3 flex-wrap p-3">
+          
           <OrderStatus
             key={1}
             bg_icon_color={'bg-blue-400'}
@@ -73,7 +75,7 @@ export default function Section1() {
 
         </div>
         
-        <div className=" flex items-center justify-center p-3 w-full">
+        <div className=" flex items-center justify-center p-3 w-full h-full">
           <NetProfit totalProfit={65834} percentage={70} profitPercentage={3} isProfit={true} />
         </div>
       </SectionLayout>

@@ -2,7 +2,7 @@ export default function SectionLayout({ children }){
         const [children1, children2] = children;
     return (
         <>
-            <div className=" flex flex-col 2xl:flex-row ">
+            <div className=" flex flex-col  lg:flex-row ">
                 <div className="  min-w-[65%]">
 
                     {children1}

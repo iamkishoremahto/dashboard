@@ -3,7 +3,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import {useThemeStore} from  '../Store/useStore';
-import { useEffect } from "react";
+
 
 
 export default function NetProfit({ totalProfit, percentage, profitPercentage, isProfit }) {
@@ -12,7 +12,7 @@ export default function NetProfit({ totalProfit, percentage, profitPercentage, i
    
     return (
         <>
-            <div className=" dark:bg-neutral-800 shadow-md bg-indigo-50 text-black dark:text-white rounded-lg w-full p-5 min-w-full lg:min-h-[250px] lg:max-h-[250px] flex items-center justify-between">
+            <div className=" dark:bg-neutral-800 shadow-md  bg-indigo-50 text-black dark:text-white rounded-lg w-full p-5 min-w-full xl:min-h-[200px] lg:flex-col-reverse lg:min-h-full xl:max-h-[200px]  xl:flex-row flex items-center justify-between">
 
                 <div className=" flex items-start flex-col   p-2">
                     <div>
@@ -20,7 +20,7 @@ export default function NetProfit({ totalProfit, percentage, profitPercentage, i
                     </div>
                     <div className="w-full  flex flex-col gap-5">
                         <div>
-                            <h1 className=" text-[40px] lg:text-[60px] font-bold">
+                            <h1 className=" text-[40px] lg:text-[50px] font-bold">
                                 ${totalProfit}
                             </h1>
                         </div>
@@ -36,8 +36,8 @@ export default function NetProfit({ totalProfit, percentage, profitPercentage, i
 
                 </div>
 
-                <div className=" w-[250px] flex items-center justify-center">
-                    <div className=" h-[130px] w-[130px] lg:h-[170px] lg:w-[170px]  relative">
+                <div className=" w-[200px] flex items-center justify-center">
+                    <div className=" h-[130px] w-[130px] lg:h-[150px] lg:w-[150px]  relative">
                         <CircularProgressbar value={percentage}
                             styles={
                                 buildStyles({
