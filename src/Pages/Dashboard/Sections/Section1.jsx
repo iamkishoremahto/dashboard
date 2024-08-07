@@ -27,7 +27,7 @@ export default function Section1() {
 
       <SectionLayout>
         
-        <div className="status flex items-center md:justify-evenly lg:justify-evenly xl:justify-between justify-center gap-3 flex-wrap p-3">
+        <div className="status flex items-center md:justify-evenly lg:justify-evenly xl:justify-between justify-center gap-3 flex-wrap xl:flex-nowrap  p-3">
           
           <OrderStatus
             key={1}
