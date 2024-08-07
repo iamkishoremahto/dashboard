@@ -14,4 +14,9 @@ const useThemeStore = create((set) => ({
     setToggleMenu: () => set((state) => ({toggleMenu : !state.toggleMenu}))
 }))
 
-export {  useOrderStatusStore, useThemeStore }
+
+const useProfitStore = create((set) =>({
+    data:[],
+    setData: (newData) => set({data:newData})
+}))
+export {  useOrderStatusStore, useThemeStore, useProfitStore }
